@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebarDrawer">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">SP</div>
+                    <div class="logo-text">
+                        <h1>Student Portal</h1>
+                    </div>
+                </div>
+                <button type="button" class="close-sidebar-btn" id="closeSidebarBtn" title="Exit Menu">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Exit</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="subject.html">Subjects</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="Previous-Year-Marks.html">Previous Year Marks</a>
+                <a href="personal-details.html">Personal Details</a>
+                <a href="course-list.html">Course List</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html" onclick="logout(); return false;" class="logout-link">Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ================= DASHBOARD ================= -->
+    <main class="dashboard">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-left">
+                <button type="button" class="menu-toggle-btn" id="menuToggleBtn" title="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="header-title-box">
+                    <h2>Welcome back, <span id="welcomeName">Harini</span></h2>
+                    <p>Here's your academic attendance overview.</p>
+                </div>
+            </div>
+
+            <div class="year">
+                Admission 2025
+            </div>
+        </div>
+
+        <!-- ================= STATISTICS ================= -->
+        <div class="cards">
+
+            <div class="card" onclick="window.location.href='subject.html'" style="cursor: pointer;" title="Click to view Subjects">
+                <h3>Total Subjects</h3>
+                <h2>5</h2>
+            </div>
+
+            <div class="card" onclick="window.location.href='attendance.html'" style="cursor: pointer;" title="Click to view Attendance">
+                <h3>Present Classes</h3>
+                <h2 class="green">164</h2>
+            </div>
+
+            <div class="card" onclick="window.location.href='attendance.html'" style="cursor: pointer;" title="Click to view Attendance">
+                <h3>Absent Classes</h3>
+                <h2 class="red">36</h2>
+            </div>
+
+            <div class="card" onclick="window.location.href='attendance.html'" style="cursor: pointer;" title="Click to view Attendance">
+                <h3>Overall Attendance</h3>
+                <h2 class="blue">82%</h2>
+            </div>
+
+        </div>
+
+        <!-- ================= BOTTOM CONTENT ================= -->
+        <div class="content">
+
+            <!-- ATTENDANCE -->
+            <div class="box attendance-box">
+                <div class="box-header">
+                    <h2 style="margin-bottom: 0;">Subject-wise Attendance</h2>
+                    <a href="attendance.html" class="box-action-link" title="View Full Attendance">View Details &rarr;</a>
+                </div>
+
+                <div class="subjects-summary-list">
+                    <div class="subject">
+                        <div class="subject-top">
+                            <span>Operating System (CS304)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <span style="width:90%"></span>
+                        </div>
+                    </div>
+
+                    <div class="subject">
+                        <div class="subject-top">
+                            <span>DBMS (CSD05)</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <span style="width:80%"></span>
+                        </div>
+                    </div>
+
+                    <div class="subject">
+                        <div class="subject-top">
+                            <span>Accounts (CSA06)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <span style="width:75%"></span>
+                        </div>
+                    </div>
+
+                    <div class="subject">
+                        <div class="subject-top">
+                            <span>Mathematics (MAT04)</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <span style="width:95%"></span>
+                        </div>
+                    </div>
+
+                    <div class="subject">
+                        <div class="subject-top">
+                            <span>Digital Marketing (CSDM06)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <span style="width:70%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STUDENT DETAILS -->
+            <div class="box student-details-box">
+                <div class="box-header">
+                    <h2 style="margin-bottom: 0;">Student Details</h2>
+                    <a href="profile.html" class="box-action-link" title="View Full Profile">View Profile &rarr;</a>
+                </div>
+
+                <div class="details-list">
+                    <div class="detail">
+                        <span>Student Name</span>
+                        <b id="detailStudentName">Harini</b>
+                    </div>
+
+                    <div class="detail">
+                        <span>Register Number</span>
+                        <b>RA202510008</b>
+                    </div>
+
+                    <div class="detail">
+                        <span>Department</span>
+                        <b>Computer Science</b>
+                    </div>
+
+                    <div class="detail">
+                        <span>Year</span>
+                        <b>II Year</b>
+                    </div>
+
+                    <div class="detail">
+                        <span>Section</span>
+                        <b>A</b>
+                    </div>
+
+                    <div class="detail">
+                        <span>Admission Year</span>
+                        <b>2025</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js?v=24.0" defer></script>
+</body>
+</html>

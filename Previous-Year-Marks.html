@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Year Marks - Student Portal</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebarDrawer">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">SP</div>
+                    <div class="logo-text">
+                        <h1>Student Portal</h1>
+                    </div>
+                </div>
+                <button type="button" class="close-sidebar-btn" id="closeSidebarBtn" title="Exit Menu">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Exit</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="subject.html">Subjects</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="Previous-Year-Marks.html" class="active">Previous Year Marks</a>
+                <a href="personal-details.html">Personal Details</a>
+                <a href="course-list.html">Course List</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html" onclick="logout(); return false;" class="logout-link">Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-left">
+                <button type="button" class="menu-toggle-btn" id="menuToggleBtn" title="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="header-title-box">
+                    <h1>Previous Year Marks</h1>
+                    <p>View your previous academic year results and transcripts</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MARKS CARD -->
+        <div class="marks-card">
+            <h2>Academic Performance</h2>
+            <div class="academic-year">
+                Academic Year 2024 - 2025 (Semester I & II)
+            </div>
+
+            <!-- ================= SEMESTER I (5 SUBJECTS) ================= -->
+            <div class="semester-section">
+                <div class="semester-header">
+                    <h3>Semester I &mdash; Academic Results</h3>
+                    <span class="semester-badge">Semester I &bull; CGPA: 8.7</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Course Code</th>
+                            <th>Internal (30)</th>
+                            <th>External (70)</th>
+                            <th>Total (100)</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- 1. TAMIL 1 -->
+                        <tr>
+                            <td>Tamil 1</td>
+                            <td>TAM101</td>
+                            <td>25</td>
+                            <td>60</td>
+                            <td class="marks">85</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+
+                        <!-- 2. ENGLISH -->
+                        <tr>
+                            <td>English</td>
+                            <td>ENG101</td>
+                            <td>26</td>
+                            <td>62</td>
+                            <td class="marks">88</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+
+                        <!-- 3. MATHS -->
+                        <tr>
+                            <td>Maths</td>
+                            <td>MAT101</td>
+                            <td>28</td>
+                            <td>67</td>
+                            <td class="marks">95</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+
+                        <!-- 4. PROGRAMMING FOR PROBLEM SOLVING -->
+                        <tr>
+                            <td>Programming for Problem Solving</td>
+                            <td>CS101</td>
+                            <td>27</td>
+                            <td>65</td>
+                            <td class="marks">92</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+
+                        <!-- 5. DIGITAL ELECTRONICS -->
+                        <tr>
+                            <td>Digital Electronics</td>
+                            <td>EC201</td>
+                            <td>25</td>
+                            <td>61</td>
+                            <td class="marks">86</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="bottom" style="margin-top: 22px;">
+                    <div class="result">
+                        Overall Cumulative Result: <span>Passed with Distinction (CGPA: 8.7)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= SEMESTER II (6 SUBJECTS) ================= -->
+            <div class="semester-section" style="margin-top: 36px;">
+                <div class="semester-header">
+                    <h3>Semester II &mdash; Academic Results</h3>
+                    <span class="semester-badge">Semester II &bull; SGPA: 8.32</span>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Course Code</th>
+                            <th>Internal (30)</th>
+                            <th>External (70)</th>
+                            <th>Total (100)</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- 1. TAMIL 2 -->
+                        <tr>
+                            <td>Tamil 2</td>
+                            <td>TAM201</td>
+                            <td>26</td>
+                            <td>63</td>
+                            <td class="marks">89</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+
+                        <!-- 2. DATA STRUCTURE AND ALGORITHMS -->
+                        <tr>
+                            <td>Data Structure and Algorithms</td>
+                            <td>CS202</td>
+                            <td>26</td>
+                            <td>64</td>
+                            <td class="marks">90</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+
+                        <!-- 3. JAVA -->
+                        <tr>
+                            <td>Java</td>
+                            <td>CS204</td>
+                            <td>28</td>
+                            <td>66</td>
+                            <td class="marks">94</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+
+                        <!-- 4. OPERATING SYSTEM -->
+                        <tr>
+                            <td>Operating System</td>
+                            <td>CS304</td>
+                            <td>27</td>
+                            <td>63</td>
+                            <td class="marks">90</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+
+                        <!-- 5. DBMS -->
+                        <tr>
+                            <td>DBMS</td>
+                            <td>CSD05</td>
+                            <td>25</td>
+                            <td>60</td>
+                            <td class="marks">85</td>
+                            <td><span class="grade">A</span></td>
+                        </tr>
+
+                        <!-- 6. ARTIFICIAL INTELLIGENCE -->
+                        <tr>
+                            <td>Artificial Intelligence</td>
+                            <td>AI301</td>
+                            <td>29</td>
+                            <td>68</td>
+                            <td class="marks">97</td>
+                            <td><span class="grade">A+</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bottom" style="margin-top: 32px;">
+                <div class="result">
+                    Overall Cumulative Result: <span>Passed with Distinction (CGPA: 8.5)</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js?v=24.0" defer></script>
+</body>
+</html>

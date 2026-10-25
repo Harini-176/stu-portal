@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Login</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body class="auth-page">
+
+<div class="login-container">
+
+    <!-- ================= LOGIN CARD ================= -->
+    <div class="login-card" id="loginPage">
+
+        <div class="logo">SP</div>
+
+        <h1>Student Portal</h1>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="studentId">Student ID or Name</label>
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Enter Student ID (e.g. student or RA202510008)"
+                    required
+                    autocomplete="username"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password (e.g. 1234)"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+
+            <!-- CAPTCHA VERIFICATION (CASE-SENSITIVE) -->
+            <div class="input-group captcha-group">
+                <div class="captcha-header">
+                    <label for="captchaInput">Captcha Verification</label>
+                    <span class="captcha-case-hint">(Case-Sensitive)</span>
+                </div>
+
+                <div class="captcha-row">
+                    <div class="captcha-canvas-box" id="captchaBox" title="Click to refresh captcha">
+                        <canvas id="captchaCanvas" width="220" height="48"></canvas>
+                    </div>
+                    <button type="button" id="refreshCaptchaBtn" class="captcha-refresh-btn" title="Generate new captcha"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/></svg></button>
+                </div>
+
+                <input
+                    type="text"
+                    id="captchaInput"
+                    placeholder="Enter 5-character captcha (case-sensitive)"
+                    required
+                    autocomplete="off"
+                    spellcheck="false"
+                    maxlength="5"
+                >
+            </div>
+
+            <div class="forgot-row">
+                <a href="forgot-password.html" class="forgot-link">
+                    Forgot Password?
+                </a>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+            <p id="loginError" class="message"></p>
+        </form>
+
+        <div class="footer">
+            © 2026 Student Portal
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - Student Portal</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebarDrawer">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">SP</div>
+                    <div class="logo-text">
+                        <h1>Student Portal</h1>
+                    </div>
+                </div>
+                <button type="button" class="close-sidebar-btn" id="closeSidebarBtn" title="Exit Menu">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Exit</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="attendance.html" class="active">Attendance</a>
+                <a href="subject.html">Subjects</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="Previous-Year-Marks.html">Previous Year Marks</a>
+                <a href="personal-details.html">Personal Details</a>
+                <a href="course-list.html">Course List</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html" onclick="logout(); return false;" class="logout-link">Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-left">
+                <button type="button" class="menu-toggle-btn" id="menuToggleBtn" title="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="header-title-box">
+                    <h1>Attendance Overview</h1>
+                    <p>View your subject-wise attendance and metrics</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <div class="summary attendance-summary">
+            <div class="summary-card">
+                <p>Total Classes</p>
+                <h2>200</h2>
+            </div>
+
+            <div class="summary-card">
+                <p>Present Classes</p>
+                <h2 class="present">164</h2>
+            </div>
+
+            <div class="summary-card">
+                <p>Absent Classes</p>
+                <h2 class="absent">36</h2>
+            </div>
+
+            <div class="summary-card">
+                <p>Overall Attendance</p>
+                <h2 class="percentage">82%</h2>
+            </div>
+        </div>
+
+        <!-- ATTENDANCE -->
+        <div class="attendance-card">
+            <h2>Subject-wise Attendance</h2>
+
+            <!-- OPERATING SYSTEM -->
+            <div class="subject">
+                <div class="subject-header">
+                    <div>
+                        <div class="subject-name">Operating System</div>
+                        <div class="subject-code">Course Code: CS304</div>
+                    </div>
+                    <div class="subject-percent">90%</div>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress green" style="width: 90%;"></div>
+                </div>
+
+                <div class="subject-detail">
+                    <span>Present: <strong>36</strong></span>
+                    <span>Absent: <strong>4</strong></span>
+                    <span>Total: <strong>40</strong></span>
+                </div>
+            </div>
+
+            <!-- DBMS -->
+            <div class="subject">
+                <div class="subject-header">
+                    <div>
+                        <div class="subject-name">DBMS</div>
+                        <div class="subject-code">Course Code: CSD05</div>
+                    </div>
+                    <div class="subject-percent">80%</div>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress green" style="width: 80%;"></div>
+                </div>
+
+                <div class="subject-detail">
+                    <span>Present: <strong>32</strong></span>
+                    <span>Absent: <strong>8</strong></span>
+                    <span>Total: <strong>40</strong></span>
+                </div>
+            </div>
+
+            <!-- ACCOUNTS -->
+            <div class="subject">
+                <div class="subject-header">
+                    <div>
+                        <div class="subject-name">Accounts</div>
+                        <div class="subject-code">Course Code: CSA06</div>
+                    </div>
+                    <div class="subject-percent">75%</div>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress yellow" style="width: 75%;"></div>
+                </div>
+
+                <div class="subject-detail">
+                    <span>Present: <strong>30</strong></span>
+                    <span>Absent: <strong>10</strong></span>
+                    <span>Total: <strong>40</strong></span>
+                </div>
+            </div>
+
+            <!-- MATHEMATICS -->
+            <div class="subject">
+                <div class="subject-header">
+                    <div>
+                        <div class="subject-name">Mathematics</div>
+                        <div class="subject-code">Course Code: MAT04</div>
+                    </div>
+                    <div class="subject-percent">95%</div>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress green" style="width: 95%;"></div>
+                </div>
+
+                <div class="subject-detail">
+                    <span>Present: <strong>38</strong></span>
+                    <span>Absent: <strong>2</strong></span>
+                    <span>Total: <strong>40</strong></span>
+                </div>
+            </div>
+
+            <!-- DIGITAL MARKETING -->
+            <div class="subject">
+                <div class="subject-header">
+                    <div>
+                        <div class="subject-name">Digital Marketing</div>
+                        <div class="subject-code">Course Code: CSDM06</div>
+                    </div>
+                    <div class="subject-percent">70%</div>
+                </div>
+
+                <div class="progress-bg">
+                    <div class="progress red" style="width: 70%;"></div>
+                </div>
+
+                <div class="subject-detail">
+                    <span>Present: <strong>28</strong></span>
+                    <span>Absent: <strong>12</strong></span>
+                    <span>Total: <strong>40</strong></span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js?v=24.0" defer></script>
+</body>
+</html>

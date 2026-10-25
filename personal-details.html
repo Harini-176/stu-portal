@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details - Student Portal</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebarDrawer">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">SP</div>
+                    <div class="logo-text">
+                        <h1>Student Portal</h1>
+                    </div>
+                </div>
+                <button type="button" class="close-sidebar-btn" id="closeSidebarBtn" title="Exit Menu">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Exit</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="subject.html">Subjects</a>
+                <a href="timetable.html">Timetable</a>
+                <a href="Previous-Year-Marks.html">Previous Year Marks</a>
+                <a href="personal-details.html" class="active">Personal Details</a>
+                <a href="course-list.html">Course List</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html" onclick="logout(); return false;" class="logout-link">Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-left">
+                <button type="button" class="menu-toggle-btn" id="menuToggleBtn" title="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="header-title-box">
+                    <h1>Personal Details</h1>
+                    <p>View your personal, contact, and academic information</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE -->
+        <div class="profile-card">
+
+            <div class="profile-top">
+                <div class="profile-icon">H</div>
+
+                <div class="profile-name">
+                    <h2 id="personalStudentName">Harini</h2>
+                    <p>Computer Science Student</p>
+                </div>
+            </div>
+
+            <!-- BASIC INFORMATION -->
+            <h3 class="section-title">
+                Basic Information
+            </h3>
+
+            <div class="details-grid">
+                <div class="detail-box">
+                    <label>Student Name</label>
+                    <p id="personalDetailName">Harini</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Register Number</label>
+                    <p>RA202510008</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Date of Birth</label>
+                    <p>15 June 2006</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Gender</label>
+                    <p>Female</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Email</label>
+                    <p>student@example.com</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Phone Number</label>
+                    <p>+91 98765 43210</p>
+                </div>
+            </div>
+
+            <!-- ACADEMIC INFORMATION -->
+            <h3 class="section-title">
+                Academic Information
+            </h3>
+
+            <div class="details-grid">
+                <div class="detail-box">
+                    <label>Department</label>
+                    <p>Computer Science & Engineering</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Year</label>
+                    <p>II Year</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Section</label>
+                    <p>A</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>Admission Year</label>
+                    <p>2025</p>
+                </div>
+            </div>
+
+            <!-- ADDRESS -->
+            <h3 class="section-title">
+                Address
+            </h3>
+
+            <div class="details-grid">
+                <div class="detail-box">
+                    <label>City</label>
+                    <p>Chennai</p>
+                </div>
+
+                <div class="detail-box">
+                    <label>State</label>
+                    <p>Tamil Nadu</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js?v=24.0" defer></script>
+</body>
+</html>

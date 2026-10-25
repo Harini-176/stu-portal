@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table - Student Portal</title>
+
+    <link rel="stylesheet" href="style.css?v=24.0">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebarDrawer">
+        <div>
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">SP</div>
+                    <div class="logo-text">
+                        <h1>Student Portal</h1>
+                    </div>
+                </div>
+                <button type="button" class="close-sidebar-btn" id="closeSidebarBtn" title="Exit Menu">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    <span>Exit</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="attendance.html">Attendance</a>
+                <a href="subject.html">Subjects</a>
+                <a href="timetable.html" class="active">Timetable</a>
+                <a href="Previous-Year-Marks.html">Previous Year Marks</a>
+                <a href="personal-details.html">Personal Details</a>
+                <a href="course-list.html">Course List</a>
+                <a href="profile.html">Profile</a>
+                <a href="index.html" onclick="logout(); return false;" class="logout-link">Logout</a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-left">
+                <button type="button" class="menu-toggle-btn" id="menuToggleBtn" title="Menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <span>Menu</span>
+                </button>
+                <div class="header-title-box">
+                    <h1>Time Table</h1>
+                    <p>View your weekly class schedule</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TIMETABLE -->
+        <div class="timetable-card">
+            <h2>Weekly Schedule</h2>
+            <div class="week">
+                Monday - Friday • II Year Section A
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>9:00 - 9:45</th>
+                            <th>9:45 - 10:30</th>
+                            <th>10:30 - 11:15</th>
+                            <th>11:15 - 11:30</th>
+                            <th>11:30 - 12:15</th>
+                            <th>12:15 - 1:00</th>
+                            <th>1:00 - 1:45</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- ================= MONDAY ================= -->
+                        <tr>
+                            <td class="day">Monday</td>
+                            <td>
+                                <span class="subject-name">Operating System</span>
+                                <span class="faculty">Dr. Kumar (CS304)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                            <td class="break">BREAK</td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                        </tr>
+
+                        <!-- ================= TUESDAY ================= -->
+                        <tr>
+                            <td class="day">Tuesday</td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Operating System</span>
+                                <span class="faculty">Dr. Kumar (CS304)</span>
+                            </td>
+                            <td class="break">BREAK</td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                        </tr>
+
+                        <!-- ================= WEDNESDAY ================= -->
+                        <tr>
+                            <td class="day">Wednesday</td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                            <td class="break">BREAK</td>
+                            <td>
+                                <span class="subject-name">Operating System</span>
+                                <span class="faculty">Dr. Kumar (CS304)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                        </tr>
+
+                        <!-- ================= THURSDAY ================= -->
+                        <tr>
+                            <td class="day">Thursday</td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Operating System</span>
+                                <span class="faculty">Dr. Kumar (CS304)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                            <td class="break">BREAK</td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                        </tr>
+
+                        <!-- ================= FRIDAY ================= -->
+                        <tr>
+                            <td class="day">Friday</td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Digital Marketing</span>
+                                <span class="faculty">Prof. Sneha (CSDM06)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Mathematics</span>
+                                <span class="faculty">Prof. Arun (MAT04)</span>
+                            </td>
+                            <td class="break">BREAK</td>
+                            <td>
+                                <span class="subject-name">DBMS</span>
+                                <span class="faculty">Dr. Raj (CSD05)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Operating System</span>
+                                <span class="faculty">Dr. Kumar (CS304)</span>
+                            </td>
+                            <td>
+                                <span class="subject-name">Accounts</span>
+                                <span class="faculty">Dr. Priya (CSA06)</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="note">
+                <strong>Note:</strong>
+                Each period is 45 minutes. Break time is from 11:15 AM to 11:30 AM. Attendance is marked per period.
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js?v=24.0" defer></script>
+</body>
+</html>
